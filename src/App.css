@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.todo-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-list form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-list input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-list button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-lists {
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-column,
+.done-column {
+    flex-grow: 1;
+    padding: 20px;
+    border: solid 1px black;
+    width: 35vw;
+    justify-content: space-around;
+}
+
+.liste{
+    list-style-type: none;
+}
+
+h3{
+    text-align: center;
+    color: darkblue;
+    font-family: "Roboto Thin";
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    color: darkblue;
+    font-family: "Roboto Thin";
+    font-style: italic;
+}
+
+body{
+    background-color: #d1dee1;
+}
+
+.title{
+    border: solid 1px black;
+    padding: 0;
+    margin: -5px;
 }
