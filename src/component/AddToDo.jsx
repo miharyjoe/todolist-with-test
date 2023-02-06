@@ -42,7 +42,7 @@ const AddTodo = () => {
                     aria-checked="false"
                     onClick={() => handleCheck(index)}
                   />
-                  {todo}
+                  <span>{todo}</span>
                 </li>
               ))}
             </ul>
@@ -55,7 +55,9 @@ const AddTodo = () => {
           <div className="scroll">
             <ul className="liste">
               {done.map((todo, index) => (
-                <li key={index}>{todo}</li>
+                <li key={index}>
+                  <span>{todo}</span>
+                </li>
               ))}
             </ul>
           </div>
