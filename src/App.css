@@ -1,68 +1,91 @@
 .todo-list {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 75px;
+  background: #e5e1ab;
+  box-shadow: 5px 5px 22px #b0b0b0, -5px -5px 22px #ffffff;
+  height: 70vh;
 }
 
 .todo-list form {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .todo-list input[type="text"] {
-    flex-grow: 1;
-    padding: 10px;
-    font-size: 16px;
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
 }
 
 .todo-list button[type="submit"] {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: lightblue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .todo-lists {
-    display: flex;
+  display: flex;
 }
 
 .todo-column,
 .done-column {
-    flex-grow: 1;
-    padding: 20px;
-    border: solid 1px black;
-    width: 35vw;
-    justify-content: space-around;
+  flex-grow: 1;
+  padding: 20px;
+  width: 35vw;
+  justify-content: space-around;
+  max-height: 200px;
 }
 
-.liste{
-    list-style-type: none;
+.todo-column {
+  background-color: #96caf7;
 }
 
-h3{
-    text-align: center;
-    color: darkblue;
-    font-family: "Roboto Thin";
-    font-size: 20px;
+.done-column {
+  background-color: #f8a3a8;
+}
+.liste {
+  list-style-type: none;
+}
+.scroll {
+  height: 25vh;
+  overflow-y: auto;
+  scroll-behavior: auto;
+}
+h3 {
+  text-align: center;
+  color: darkblue;
+  font-family: "Roboto Thin";
+  font-size: 20px;
 }
 
-h1{
-    text-align: center;
-    color: darkblue;
-    font-family: "Roboto Thin";
-    font-style: italic;
+h1 {
+  text-align: center;
+  color: darkblue;
+  font-family: "Roboto Thin";
+  font-style: italic;
 }
 
-body{
-    background-color: #d1dee1;
+body {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  background-color: #f7f7f7;
 }
 
-.title{
-    border: solid 1px black;
-    padding: 0;
-    margin: -5px;
+.title {
+  padding: 0;
+  margin: -5px;
+}
+
+ul li {
+  border: solid 1px #ffffff;
+  width: auto;
+  height: 5vh;
 }
