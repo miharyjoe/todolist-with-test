@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import TodoInput from "./TodoInput";
+import TodoColumn from "./TodoColumn";
 
 const AddTodo = () => {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
   const [done, setDone] = useState([]);
-
   const handleCheck = (index) => {
     setDone([...done, todos[index]]);
     setTodos(todos.filter((todo, i) => i !== index));
@@ -19,48 +20,17 @@ const AddTodo = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          aria-label="Add Todo"
-          type="text"
-          required
-          value={newTodo}
-          onChange={updateInputVal}
-        />
-      </form>
+      <TodoInput
+        value={newTodo}
+        onChange={updateInputVal}
+        onSubmit={handleSubmit}
+      />
       <div className="todo-lists">
         <div className="todo-column">
-          <div className="title">
-            <h3>Todo</h3>
-          </div>
-          <div className="scroll">
-            <ul className="liste">
-              {todos.map((todo, index) => (
-                <li key={index}>
-                  <input
-                    type="checkbox"
-                    aria-checked="false"
-                    onClick={() => handleCheck(index)}
-                  />
-                  <span>{todo}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <TodoColumn title="Todo" todos={todos} handleCheck={handleCheck} />
         </div>
         <div className="done-column">
-          <div className="title">
-            <h3>Done</h3>
-          </div>
-          <div className="scroll">
-            <ul className="liste">
-              {done.map((todo, index) => (
-                <li key={index}>
-                  <span>{todo}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <TodoColumn title="Done" todos={done} />
         </div>
       </div>
     </div>
