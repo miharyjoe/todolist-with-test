@@ -46,14 +46,17 @@
 
 .todo-column {
   background-color: #96caf7;
+  border-radius: 15px;
 }
 
 .done-column {
   background-color: #f8a3a8;
+  border-radius: 15px;
 }
 .liste {
   list-style-type: none;
 }
+
 .scroll {
   height: 25vh;
   width: 30vw;
