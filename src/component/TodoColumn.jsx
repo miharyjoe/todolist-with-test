@@ -8,7 +8,7 @@ const TodoColumn = ({ title, todos, handleCheck }) => (
       <h3>{title}</h3>
     </div>
     <div className="scroll">
-      {title == "Todo" ? (
+      {title === "Todo" ? (
         <TodoList todos={todos} handleCheck={handleCheck} />
       ) : (
         <DoneList todos={todos} />
