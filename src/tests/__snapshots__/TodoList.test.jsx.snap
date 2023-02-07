@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList  component snapshot: render todo list 1`] = `
+<div>
+  <ul
+    class="liste"
+  >
+    <li>
+      <input
+        type="checkbox"
+      />
+      <span>
+        Todo 1
+      </span>
+    </li>
+    <li>
+      <input
+        type="checkbox"
+      />
+      <span>
+        Todo 2
+      </span>
+    </li>
+    <li>
+      <input
+        type="checkbox"
+      />
+      <span>
+        Todo 3
+      </span>
+    </li>
+  </ul>
+</div>
+`;
