@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DoneList snapshot: renders done task 1`] = `
+<div>
+  <ul
+    class="liste"
+  >
+    <li>
+      Todo 1
+    </li>
+    <li>
+      Todo 2
+    </li>
+    <li>
+      Todo 3
+    </li>
+  </ul>
+</div>
+`;
