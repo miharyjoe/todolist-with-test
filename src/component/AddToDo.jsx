@@ -4,7 +4,7 @@ const AddTodo = () => {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
   const [done, setDone] = useState([]);
-
+  const [isChecked, setIsChecked] = useState(false);
   const handleCheck = (index) => {
     setDone([...done, todos[index]]);
     setTodos(todos.filter((todo, i) => i !== index));
@@ -39,7 +39,7 @@ const AddTodo = () => {
                 <li key={index}>
                   <input
                     type="checkbox"
-                    aria-checked="false"
+                    checked={isChecked}
                     onClick={() => handleCheck(index)}
                   />
                   <span>{todo}</span>
